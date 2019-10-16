@@ -1,2 +1,7 @@
-lisez moi
-C'est bon !
+Séance TD n°1:
+  Mise en place du projet :
+    - Via GitHub
+    - Création des branches perso
+    - Utilisation des commandes bash "git"
+  Trouver des idées:
+    - Un site internet pour vendre des ... canard en plastique !
