@@ -4,4 +4,5 @@ Séance TD n°1:
     - Création des branches perso
     - Utilisation des commandes bash "git"
   Trouver des idées:
-    - Un site internet pour vendre des ... canard en plastique !
+    - Un site internet pour vendre des ... citrouille !
+    
