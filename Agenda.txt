@@ -5,3 +5,6 @@ Séance TD n°1:
     - Utilisation des commandes bash "git"
   Trouver des idées:
     - Un site internet pour vendre des ... canard en plastique !
+
+Travail perso:
+    - Installation de Git
