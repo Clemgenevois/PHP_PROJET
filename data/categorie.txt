@@ -1,0 +1,9 @@
+1|Produits|1
+2|Terrasse et Jardin|1
+3|Abri, garage, rangement et étendage|2
+4|Abri de jardin|3
+5|Décoration & Eclairage|1
+6|Luminaire intérieur|5
+7|Applique murale|6
+8|Eclairage de salle de bains|6
+9|Outillage|1
