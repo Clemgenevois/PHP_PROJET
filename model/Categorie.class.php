@@ -12,6 +12,5 @@
         function getNom() : string {
           return $this->nom;
         }
-
 }
 ?>
