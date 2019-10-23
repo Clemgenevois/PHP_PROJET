@@ -24,8 +24,7 @@ $view = new View();
 // Passe les paramètres à la vue
 
 // Les articles
-$view->assign('articles',$articles);
-
+$view->assign('articliees',$articles);
 // La catégorie
 $view->assign('categorie',$categorie);
 
