@@ -1,0 +1,24 @@
+1|Citrouille d'automne| |Valence|fleur|25|autumn-4454446_1920.jpg
+2|Citrouille consommable|Rouen|ouverte|20.5|eat-2559490_1920.png
+3|Citrouille bleue|Paris|bleue|35|halloween-1486549_1920.jpg
+4|Citrouille halloween|Marseille|peur|2|halloween-2880491_1920.jpg
+5|Citrouille halloween|Lille|jack|52|jack-o-lantern-3735387_1920.jpg
+6|Citrouille halloween|Grenoble|dessin|29|pumpkin-786668_1280.jpg
+7|Citrouille halloween|Toulouse|noir|41|pumpkin-917432_1920.jpg
+8|Citrouille halloween|Bordeaux|radiateur|33|pumpkin-1789832_1920.jpg
+9|Citrouilles halloween|Quimper|trois|60|pumpkin-2327488_1920.jpg
+10|Citrouilles vertes|Bourges|vertes|7|pumpkin-2738617_1920.jpg
+11|Citrouille halloween|Angers|nulle|34|pumpkin-2754001_1920.jpg
+12|Citrouilles mignonnes|Vienne|mignonnes|22|pumpkin-2913961_1920.jpg
+13|Morceau de citrouille|Lyon|morceau|6|pumpkin-3360793_1920.jpg
+14|Tas de citrouilles|Royan|Tas|80|pumpkin-3636239_1920.jpg
+15|Citrouille jaune|Ajaccio|jaune|20|pumpkin-3701964_1920.jpg
+16|Citrouille jaune|Narbonne|jaune|43|pumpkin-3713158_1920.jpg
+17|Jolie citrouille|Tarn|fleur|37|pumpkin-4452443_1920.jpg
+18|Citrouille orange|Bobigny|petite|2|pumpkin-4454745_1920.jpg
+19|Amas de citrouilles|Nevers|vertes|83|pumpkin-4470981_1920.jpg
+20|Citrouille verte|Albi|verte|12|pumpkins-1642231_1920.jpg
+21|Citrouilles tricolores|Barcelona|tricolore|35|pumpkins-2204643_1920.jpg
+22|Citrouilles thanksgiving|Beaune|thanksgiving|26|thanksgiving-1632786_1920.jpg
+
+Manque la categorie 
