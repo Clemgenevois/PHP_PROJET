@@ -1,0 +1,9 @@
+les categories
+
+-halloween (pumpkin_4, pumpkin_5, pumpkin_6, pumpkin_7, pumpkin_8, pumpkin_9, pumpkin_10, pumpkin_11)
+
+-oranges (pumpkin_1, pumpkin_2, pumpkin_3, pumpkin_5, pumpkin_6, pumpkin_7, pumpkin_9, pumpkin_10, pumpkin_11, pumpkin_17, pumpkin_18)
+
+-vertes et jaunes (pumpkin_12, pumpkin_15, pumpkin_16, pumpkin_19, pumpkin_20, pumpkin_21, pumpking_22)
+
+-naturelles (pumpkin_1, pumpkin_2, pumpkin_3, pumpkin_12, pumpkin_13, pumpkin_14, pumpkin_15, pumpkin_16, pumpkin_17, pumpkin_18, pumpkin_19, pumpkin_20, pumpkin_21, pumpkin_22)
