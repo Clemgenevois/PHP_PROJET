@@ -8,9 +8,11 @@ h1 {
 	padding-left : 20px;
 	color: #000000;
 	text-shadow: 2px 2px #000000;
+  justify-content: center;
   text-align: center;
 }
 h2{
+  justify-content: center;
   text-align: center;
 }
 .contenu{
@@ -25,6 +27,7 @@ p{
 /* Add a black background color to the top navigation */
 .topnav {
  background-color: #FFA500;
+ color: red;
  overflow: hidden;
 }
 

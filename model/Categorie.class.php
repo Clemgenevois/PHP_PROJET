@@ -12,13 +12,5 @@
         function getNom() : string {
           return $this->nom;
         }
-
-        function getPath() : array {
-            ///////////////////////////////////////////////////////
-            //  A COMPLETER
-            ///////////////////////////////////////////////////////
-           return array();
-    }
-
 }
 ?>

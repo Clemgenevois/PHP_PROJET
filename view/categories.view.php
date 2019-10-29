@@ -3,7 +3,6 @@
 <title>Bricomachin</title>
 <meta charset="UTF-8"/>
 <meta http-equiv="content-type" content="text/html;" />
-<meta name="author" content="Jean-Pierre Chevallet" />
 <link rel="stylesheet" type="text/css" href="../view/design/style.css"
 </head>
 
@@ -22,7 +21,7 @@
   /////////////////////////////////////////
   // partie 2.4
     /////////////////////////////////////////
-    
+
   ?>
 <footer>
 </p>Site fictif, issus de données réelles du Web</p>

@@ -5,6 +5,8 @@
         private $ref;       // Référence unique
         private $libelle;   // Nom de l'article
         private $categorie; // identifiant de catégorie
+        private $provenance;// provenance du produit
+        private $compInfos; // complement d'informations
         private $prix;      // le prix
         private $image;     // Nom du fichier image
 
@@ -21,6 +23,14 @@
           return $this->categorie;
         }
 
+        function getProvenance() : string {
+          return $this->provenance;
+        }
+
+        function getCompInfos() : string {
+          return $this->compInfos;
+        }
+
         function getPrix() : float {
           return $this->prix;
         }
@@ -28,8 +38,5 @@
         function getImage() : string {
           return $this->image;
         }
-
-
-    }
-
+}
 ?>
