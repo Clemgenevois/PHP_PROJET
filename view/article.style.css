@@ -1,0 +1,10 @@
+body{
+
+}
+section{
+display: flex;
+flex-wrap: wrap;
+}
+p.prix{
+  text-align: left;
+}
