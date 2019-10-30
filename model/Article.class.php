@@ -35,7 +35,7 @@
         }
 
         function getImage() : string {
-          return $this->image;
+          return '../../citrouilles_data/' .$this->image;
         }
 }
 ?>
