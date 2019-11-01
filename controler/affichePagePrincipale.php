@@ -15,8 +15,19 @@ if (isset($_GET['ref'])) {
 } else {
   // Pas de catégorie
   $categorie = 0;
+<<<<<<< HEAD
   $articles = $dao->firstN(10);
 }
+=======
+  $articles = $dao->firstN(12);
+}
+
+  //test pour verifier que la variable article soit exact
+  // foreach($articles as $res){
+  //   var_dump($res->getRef());
+  //      }
+
+>>>>>>> master
 // Construction de la vue
 ////////////////////////////////////////////////////////////////////////////
 $view = new View();
@@ -24,7 +35,11 @@ $view = new View();
 // Passe les paramètres à la vue
 
 // Les articles
+<<<<<<< HEAD
 $view->assign('articliees',$articles);
+=======
+$view->assign('articles',$articles);
+>>>>>>> master
 // La catégorie
 $view->assign('categorie',$categorie);
 
@@ -53,5 +68,9 @@ $view->assign('prevRef',$prevRef);
 //$view->dump();
 
 // Charge la vue
+<<<<<<< HEAD
 $view->display("articles.view.php")
+=======
+$view->display("principale.view.php")
+>>>>>>> master
 ?>
