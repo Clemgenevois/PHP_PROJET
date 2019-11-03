@@ -5,21 +5,19 @@ include_once("../framework/view.class.php");
 // Inclusion du modèle
 include_once("../model/DAO.class.php");
 
+$config = parse_ini_file('../config/config.ini');
+
 // Creation de l'unique objet DAO
-$dao = new DAO();
+$dao = new DAO($config['database_path']);
 
 if (isset($_GET['ref'])) {
   // Pas de catégorie
   $categorie = 0;
-  $articles = $dao->getN($_GET['ref'],12);
+  $articles = $dao->getArticles($_GET['ref'],12);
 } else {
   // Pas de catégorie
   $categorie = 0;
-<<<<<<< HEAD
-  $articles = $dao->firstN(10);
-}
-=======
-  $articles = $dao->firstN(12);
+  $articles = $dao->getFirstArticles(12);
 }
 
   //test pour verifier que la variable article soit exact
@@ -35,11 +33,8 @@ $view = new View();
 // Passe les paramètres à la vue
 
 // Les articles
-<<<<<<< HEAD
-$view->assign('articliees',$articles);
-=======
 $view->assign('articles',$articles);
->>>>>>> master
+
 // La catégorie
 $view->assign('categorie',$categorie);
 
@@ -62,15 +57,11 @@ $prevRef = $dao->prevN($firstRef,10);
 if ($prevRef == -1) {
   $prevRef = $firstRef;
 }
+
 // Passe le résultat à la vue
 $view->assign('prevRef',$prevRef);
 
-//$view->dump();
-
 // Charge la vue
-<<<<<<< HEAD
-$view->display("articles.view.php")
-=======
+
 $view->display("principale.view.php")
->>>>>>> master
 ?>
