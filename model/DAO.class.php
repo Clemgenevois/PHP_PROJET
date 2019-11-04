@@ -1,10 +1,19 @@
 <?php
+# Inclusion du fichier contenant la classe Article
 require_once("../model/Article.class.php");
 
-class CitrouilleDAO {
+# Déclaration d'une constante
+const NO_REF = -1;
+
+class DAO {
+
+// Artibut
   private $db;
-  function __construct(string $path) {;
-    $database = $path . 'citrouille.db';
+
+// Construction
+  function __construct(string $path) {
+    $database = 'sqlite:' . $path . 'citrouille.db';
+
       try {
         $this->db = new PDO($database);
          }
@@ -13,15 +22,20 @@ class CitrouilleDAO {
       }
   }
 
+// Méthodes
+//------------------------------------------------------------------------------
+
   function getArticle(int $ref): Article {
+    // retourne l'article de référence $ref
+
     #Execution de la requête
-    $sqlAnswer = $this->db->query('select * from Article where ref='. $ref);
+    $sqlAnswer = $this->db->query('select * from article where ref='. $ref);
 
     # Récupération du résultat sous forme d'un tableau d'Article.
-    $res = $sqlAnswer->fetchAll(DAO::FETCH_CLASS,'Article');
+    $res = $sqlAnswer->fetchAll(PDO::FETCH_CLASS,'Article');
 
+    #Contrôle d'erreur :
     if ($res[0]==NULL) {
-      #Contrôle d'erreur :
       echo '/!\ --- Aucune article trouvée';
     }
     else {
@@ -29,49 +43,71 @@ class CitrouilleDAO {
     }
   }
 
-  function getFirstArticles(int $nb): array {
+//------------------------------------------------------------------------------
+
+  function getNbArticles(int $ref,int $nb): array {
     #Execution de la requête
-    $sqlAnswer = $this->db->query('select * from Article limit '. $nb);
+    $sqlAnswer = $this->db->query('select * from article where ref>='. $ref . ' limit '. $nb);
 
     # Récupération du résultat sous forme d'un tableau d'Article.
-    $res = $sqlAnswer->fetchAll(DAO::FETCH_CLASS,'Article');
+    $res = $sqlAnswer->fetchAll(PDO::FETCH_CLASS,'Article');
 
-    if ($res[0]==NULL) {
-      #Contrôle d'erreur :
+    #Contrôle d'erreur
+    if (empty($res)) {
       echo '/!\ --- Aucune article trouvée';
     }
-
     return $res;
   }
 
-  function getArticles(int $ref,int $nb): array {
+//------------------------------------------------------------------------------
+
+  function getFirstNbArticles(int $nb): array {
     #Execution de la requête
-    $sqlAnswer = $this->db->query('select * from Article where ref>='. $ref . ' limit '. $nb);
+    $sqlAnswer = $this->db->query('select * from article limit '. $nb);
 
     # Récupération du résultat sous forme d'un tableau d'Article.
-    $res = $sqlAnswer->fetchAll(DAO::FETCH_CLASS,'Article');
+    $res = $sqlAnswer->fetchAll(PDO::FETCH_CLASS,'Article');
 
-    if ($res[0]==NULL) {
-      #Contrôle d'erreur :
+    #Contrôle d'erreur :
+    if (empty($res)) {
       echo '/!\ --- Aucune article trouvée';
     }
-
     return $res;
   }
 
-  function nextArticle(int $ref): int {
+//------------------------------------------------------------------------------
+
+  function getNextRef(int $ref): int {
     #Execution de la requête
-    $sqlAnswer = $this->db->query('select * from Article where ref>'. $ref .' limit 1');
+    $sqlAnswer = $this->db->query('select * from article where ref>'. $ref .' order by ref limit 1');
 
     # Récupération du résultat sous forme d'un tableau d'Article.
-    $res = $sqlAnswer->fetchAll(DAO::FETCH_CLASS,'Article');
+    $res = $sqlAnswer->fetchAll(PDO::FETCH_CLASS,'Article');
 
     if ($res[0]==NULL) {
-      #Contrôle d'erreur :
-      echo '/!\ --- Aucune article trouvée';
+      return NO_REF;
     }
+    else {
+      return $res[0]->getRef();
+    }
+  }
 
-    return $res[0];
+//------------------------------------------------------------------------------
+
+  function getPreviousNbRef(int $ref, int $nb): int {
+    #Execution de la requête
+    $sqlAnswer = $this->db->query('select ref from article where ref<'. $ref .' order by ref desc limit '. $nb);
+
+    # Récupération du résultat sous forme d'un tableau d'Article.
+    $res = $sqlAnswer->fetchAll(PDO::FETCH_CLASS,'Article');
+    if (empty($res)) {
+      return NO_REF;
+    }
+    else {
+      return $res[$nb-1]->getRef();
+    }
   }
 }
+
+//------------------------------------------------------------------------------
 ?>

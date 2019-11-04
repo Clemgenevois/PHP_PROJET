@@ -13,19 +13,13 @@ $dao = new DAO($config['database_path']);
 if (isset($_GET['ref'])) {
   // Pas de catégorie
   $categorie = 0;
-  $articles = $dao->getArticles($_GET['ref'],12);
+  $articles = $dao->getNbArticles($_GET['ref'],12);
 } else {
   // Pas de catégorie
   $categorie = 0;
-  $articles = $dao->getFirstArticles(12);
+  $articles = $dao->getFirstNbArticles(12);
 }
 
-  //test pour verifier que la variable article soit exact
-  // foreach($articles as $res){
-  //   var_dump($res->getRef());
-  //      }
-
->>>>>>> master
 // Construction de la vue
 ////////////////////////////////////////////////////////////////////////////
 $view = new View();
@@ -38,12 +32,16 @@ $view->assign('articles',$articles);
 // La catégorie
 $view->assign('categorie',$categorie);
 
+$config = parse_ini_file('../config/config.ini');
+
+$view->assign('image_path',$config['images_path']);
+/*
 // Note la référence du premier et dernier article affiché
 $firstRef = $articles[0]->getRef();
 $lastRef = end($articles)->getRef();
 
 // Calcule la référence qui suit le dernier article
-$nextRef = $dao->next($lastRef);
+$nextRef = $dao->getNextRef($lastRef);
 // Si c'est la fin: reste sur le même article
 if ($nextRef == -1) {
   $nextRef = $firstRef;
@@ -52,7 +50,7 @@ if ($nextRef == -1) {
 $view->assign('nextRef',$nextRef);
 
 // Calcule la référence qui précède de 10 l'article courant
-$prevRef = $dao->prevN($firstRef,10);
+$prevRef = $dao->getPreviousNbRef($firstRef,10);
 // Si c'est la fin: reste sur le même article
 if ($prevRef == -1) {
   $prevRef = $firstRef;
@@ -60,7 +58,7 @@ if ($prevRef == -1) {
 
 // Passe le résultat à la vue
 $view->assign('prevRef',$prevRef);
-
+*/
 // Charge la vue
 
 $view->display("principale.view.php")

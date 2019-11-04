@@ -1,6 +1,5 @@
 <?php
 
-    // Un article en vente
     class Article {
         private $ref;
         private $libelle;
@@ -35,7 +34,7 @@
         }
 
         function getImage() : string {
-          return '../../citrouilles_data/' .$this->image;
+          return $this->image;
         }
 }
 ?>

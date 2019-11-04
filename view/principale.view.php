@@ -29,7 +29,7 @@
     <a href="article.ctrl.php?id=<?php echo $res->getRef()?>">
     <article>
   <h2> <?php echo $res->getLibelle() ?></h2>
-  <?php  $img = "../view/citrouilles_data/".$res->getImage();?>
+  <?php  $img = $image_path . $res->getImage();?>
          <img src="<?= $img ?>" alt="citrouille"/>
          <p> <?= $res->getPrix() ?> €</p>
    </article>
