@@ -34,7 +34,7 @@ $view->assign('categorie',$categorie);
 
 $config = parse_ini_file('../config/config.ini');
 
-$view->assign('image_path',$config['images_path']);
+$view->assign('images_path',$config['images_path']);
 /*
 // Note la référence du premier et dernier article affiché
 $firstRef = $articles[0]->getRef();

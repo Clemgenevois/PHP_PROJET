@@ -14,23 +14,22 @@
 
     <div class="topnav" id="myTopnav">
       <a href="#home" class="active">Home</a>
-      <a href="../controler/pageCatalogue.php">Voir Tout</a>
-      <a href="../controler/pageContact.php">Contact</a>
-      <a href="../controler/pageAbout.php">About</a>
+      <a href="../controler/pageCatalogue.ctrl.php">Voir Tout</a>
+      <a href="../controler/pageContact.ctrl.php">Contact</a>
+      <a href="../controler/pageAbout.ctrl.php">About</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
-  <p><img src="../view/citrouilles_data/banderole_citrouille.jpg"/></p>
+  <p><img src= <?= $images_path .'banderole_citrouille.jpg'?>/></p>
 </header>
 
 <?php
   foreach($articles as $res){   ?>
-    <a href="article.ctrl.php?id=<?php echo $res->getRef()?>">
+    <a href="pageArticle.ctrl.php?ref=<?php echo $res->getRef()?>">
     <article>
   <h2> <?php echo $res->getLibelle() ?></h2>
-  <?php  $img = $image_path . $res->getImage();?>
-         <img src="<?= $img ?>" alt="citrouille"/>
+         <img src="<?= $images_path . $res->getImage()?>" alt="citrouille"/>
          <p> <?= $res->getPrix() ?> €</p>
    </article>
    </a>

@@ -31,7 +31,7 @@ class DAO {
     #Execution de la requête
     $sqlAnswer = $this->db->query('select * from article where ref='. $ref);
 
-    # Récupération du résultat sous forme d'un tableau d'Article.
+    # Récupération du résultat sous forme d'un tableau d'Article.ProgWeb/lit_project/PHP_Projet/controler/article.ctrl.php?ref=1
     $res = $sqlAnswer->fetchAll(PDO::FETCH_CLASS,'Article');
 
     #Contrôle d'erreur :
@@ -78,7 +78,7 @@ class DAO {
 //------------------------------------------------------------------------------
 
   function getNextRef(int $ref): int {
-    #Execution de la requête
+    #Execution de la requêteProgWeb/lit_project/PHP_Projet/controler/article.ctrl.php?ref=1
     $sqlAnswer = $this->db->query('select * from article where ref>'. $ref .' order by ref limit 1');
 
     # Récupération du résultat sous forme d'un tableau d'Article.

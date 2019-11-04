@@ -1,3 +1,3 @@
 <?php
-    header('Location: controler/affichePagePrincipale.php');
+    header('Location: controler/pagePrincipale.ctrl.php');
 ?>
