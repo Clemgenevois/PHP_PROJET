@@ -21,12 +21,12 @@
         <i class="fa fa-bars"></i>
       </a>
     </div>
-  <p><img src= <?= $images_path .'banderole_citrouille.jpg'?>/></p>
+  <p><img src="<?= $images_path.'banderole_citrouille.jpg'?>"/></p>
 </header>
 
 <?php
   foreach($articles as $res){   ?>
-    <a href="pageArticle.ctrl.php?ref=<?php echo $res->getRef()?>">
+    <a href="pageArticle.ctrl.php?ref=<?= $res->getRef()?>">
     <article>
   <h2> <?php echo $res->getLibelle() ?></h2>
          <img src="<?= $images_path . $res->getImage()?>" alt="citrouille"/>

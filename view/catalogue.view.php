@@ -24,11 +24,10 @@
     <h2>Catalogue des produits</h2>
     <?php
       foreach($articles as $res){   ?>
-        <a href="pageArticle.ctrl.php?ref=<?php echo $res->getRef()?>">
+        <a href="pageArticle.ctrl.php?ref=<?= $res->getRef()?>">
         <article>
       <h2> <?php echo $res->getLibelle() ?></h2>
-      <?php  $img = "../view/citrouilles_data/".$res->getImage();?>
-             <img src="<?= $img ?>" alt="citrouille"/>
+             <img src="<?=$images_path . $res->getImage()?>" alt="citrouille"/>
              <p> <?= $res->getPrix() ?> €</p>
        </article>
        </a>

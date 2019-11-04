@@ -58,6 +58,21 @@ class DAO {
     }
     return $res;
   }
+//------------------------------------------------------------------------------
+
+  function getAllArticles(): array {
+    #Execution de la requête
+    $sqlAnswer = $this->db->query('select * from article');
+
+    # Récupération du résultat sous forme d'un tableau d'Article.
+    $res = $sqlAnswer->fetchAll(PDO::FETCH_CLASS,'Article');
+
+    #Contrôle d'erreur
+    if (empty($res)) {
+      echo '/!\ --- Aucune article trouvée';
+    }
+    return $res;
+  }
 
 //------------------------------------------------------------------------------
 

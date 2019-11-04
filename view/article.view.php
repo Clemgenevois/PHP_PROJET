@@ -2,16 +2,16 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="../view/article.style.css">
+    <link rel="stylesheet" type="text/css" href="../view/styleArticle.css">
     <title>article.php</title>
   </head>
   <body>
     <header>
-      
+
     </header>
 
     <section>
-      <img src="<?= $article->getImage()?>" alt="<?='image de'. $article->getLibelle()?>">
+      <img src="<?= $images_path . $article->getImage()?>" alt="<?='image de'. $article->getLibelle()?>">
 
       <article>
         <figure>
@@ -30,8 +30,7 @@
     </section>
 
     <footer>
-      <p>Site fictif, proposant de merveilleuses citrouille. <br>
-      image provenant de :</p>
+      <p>Site fictif, proposant de merveilleuses citrouille.</p>
     </footer>
 
   </body>
