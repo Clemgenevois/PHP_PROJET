@@ -18,10 +18,37 @@ class DAO {
          } catch (PDOException $e){
            die("erreur de connexion:".$e->getMessage()); }
   }
+  // Accès à tous les articles
+  // Retourne une table d'objets de type article
+  function getAllArt() : array {
+    $req = "SELECT * FROM article" ;
+    $sth=$this->db->query($req);
+    $tabresult=$sth->fetchAll(PDO::FETCH_CLASS,'Article');
+    return $tabresult;
+  }
+
   // Accès à toutes les catégories
   // Retourne une table d'objets de type Categorie
   function getAllCat() : array {
     $req = "SELECT * FROM categorie" ;
+    $sth=$this->db->query($req);
+    $tabresult=$sth->fetchAll(PDO::FETCH_CLASS,'Categorie');
+    return $tabresult;
+  }
+
+  // Accès à tous les articles de la categorie choisie
+  // Retourne une table d'objets de type Article
+  function getArtCat(int $id) : array {
+    $req = "SELECT * FROM article WHERE categorie='$id'" ;
+    $sth=$this->db->query($req);
+    $tabresult=$sth->fetchAll(PDO::FETCH_CLASS,'Article');
+    return $tabresult;
+  }
+
+  // Accès à tous les articles de la categorie choisie
+  // Retourne une table d'objets de type Article
+  function getCat(int $id) : array {
+    $req = "SELECT * FROM categorie WHERE id='$id'" ;
     $sth=$this->db->query($req);
     $tabresult=$sth->fetchAll(PDO::FETCH_CLASS,'Categorie');
     return $tabresult;

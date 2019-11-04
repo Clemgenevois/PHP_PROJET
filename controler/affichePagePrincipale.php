@@ -59,5 +59,5 @@ $view->assign('prevRef',$prevRef);
 //$view->dump();
 
 // Charge la vue
-$view->display("articles.view.php")
+$view->display("principale.view.php")
 ?>

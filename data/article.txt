@@ -12,11 +12,10 @@
 12|Citrouilles mignonnes|3|Vienne|mignonnes|22|pumpkin_13.jpg
 13|Morceau de citrouille|4|Lyon|morceau|6|pumpkin_1.jpg
 14|Tas de citrouilles|4|Royan|Tas|80|pumpkin_14.jpg
-15|Citrouille jaune|3|Ajaccio|jaune|20|pumpkin_15.jpg}
-16|Citrouille jaune|3|Narbonne|jaune|43|pumpkin_16.jpg
-17|Jolie citrouille|2|Tarn|fleur|37|pumpkin_17.jpg
-18|Citrouille orange|2|Bobigny|petite|2|pumpkin_2.jpg
-19|Amas de citrouilles|3|Nevers|vertes|83|pumpkin_19.jpg
-20|Citrouille verte|3|Albi|verte|12|pumpkin_20.jpg
-21|Citrouilles tricolores|3|Barcelona|tricolore|35|pumpkin_21.jpg
-22|Citrouilles thanksgiving|3|Beaune|thanksgiving|26|pumpkin_22.jpg
+15|Citrouille jaune|3|Narbonne|jaune|43|pumpkin_16.jpg
+16|Jolie citrouille|2|Tarn|fleur|37|pumpkin_17.jpg
+17|Citrouille orange|2|Bobigny|petite|2|pumpkin_2.jpg
+18|Amas de citrouilles|3|Nevers|vertes|83|pumpkin_19.jpg
+19|Citrouille verte|3|Albi|verte|12|pumpkin_20.jpg
+20|Citrouilles tricolores|3|Barcelona|tricolore|35|pumpkin_21.jpg
+21|Citrouilles thanksgiving|3|Beaune|thanksgiving|26|pumpkin_22.jpg
