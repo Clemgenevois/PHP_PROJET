@@ -14,6 +14,7 @@
       <div class="topnav" id="myTopnav">
         <a href="../controler/pagePrincipale.ctrl.php">Home</a>
         <a href="../controler/pageCatalogue.ctrl.php" >Voir Tout</a>
+        <a href="../controler/pageCategorie.ctrl.php">Categorie</a>
         <a href="#contact" class="active">Contact</a>
         <a href="../controler/pageAbout.ctrl.php">About</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -27,9 +28,11 @@
       <p class="coordo">
         682 route d'halloween <br>
         36524 Horrorland <br>
-        08 00 666 666
-        <p>Ouvert tous les jours 24h/24
-          <br> Du 1 Octobre au 1 Novembre </p>
+        08 00 666 666 <br>
+        </p>
+        <p class="coordo">
+        Ouvert tous les jours 24h/24
+        <br> Du 1 Octobre au 1 Novembre
         </p>
     </div>
     <div class="form">
@@ -56,5 +59,11 @@
     </div>
       </form>
     </div>
+    <footer>
+      <div class="foot">
+        <a href="https://www.producteurs-savoie-mont-blanc.com/citrouilles-potimarrons.html"> Coopérative de producteurs de citrouilles</a>
+      </p>Site fictif, proposant de merveilleuses citrouilles</p>
+    </div>
+  </footer>
   </body>
 </html>

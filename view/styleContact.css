@@ -17,10 +17,41 @@ h2{
 }
 .contenu{
   display: flex;
+  justify-content: center;
   height: 70%;
 }
 p{
   color: #000000;
+}
+
+.infos{
+  margin: 70px;
+  padding: 30px;
+  border: 1px solid #000000;
+}
+
+.form{
+  margin: 70px;
+  padding: 30px;
+  border: 1px solid #000000;
+}
+
+.coordo{
+  padding: 15px 0;
+}
+
+footer{
+  text-align: right;
+  padding-right: 15px;
+}
+
+.foot {
+	padding: 20px;
+}
+.foot a {
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 /* menuburger  */
@@ -50,7 +81,7 @@ p{
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
- background-color: #00FF00;
+ background-color: #753700;
  color: white;
 }
 

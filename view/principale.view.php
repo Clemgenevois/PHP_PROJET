@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta http-equiv="content-type" content="text/html;" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="../view/styleArticle.css">
+<link rel="stylesheet" type="text/css" href="../view/stylePrincipale.css">
 </head>
 
 <body>
@@ -36,12 +36,15 @@
   <?php } ?>
 
 <footer>
-</p>Site fictif, proposant de merveilleuses citrouilles</p>
+  <div class="foot">
+    <a href="https://www.producteurs-savoie-mont-blanc.com/citrouilles-potimarrons.html"> Coopérative de producteurs de citrouilles</a>
+    </p>Site fictif, proposant de merveilleuses citrouilles</p>
+  </div>
 </footer>
 </body>
 </html>
 
-<script>
+<script> // cet ajout JavaScript sert a recuperer et afficher la page correspondant a la section choisie de la nav bar
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {

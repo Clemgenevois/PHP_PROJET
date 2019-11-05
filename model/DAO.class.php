@@ -27,41 +27,40 @@ class DAO {
 
   function getArticle(int $ref): Article {
     // retourne l'article de référence $ref
-
-    #Execution de la requête
+    # Execution de la requête.
     $sqlAnswer = $this->db->query('select * from article where ref='. $ref);
 
-    # Récupération du résultat sous forme d'un tableau d'Article.ProgWeb/lit_project/PHP_Projet/controler/article.ctrl.php?ref=1
+    # Récupération du résultat sous forme d'un tableau d'Article.
     $res = $sqlAnswer->fetchAll(PDO::FETCH_CLASS,'Article');
-
-    #Contrôle d'erreur :
-    if ($res[0]==NULL) {
-      echo '/!\ --- Aucune article trouvée';
-    }
-    else {
-      return $res[0];
-    }
+    return $res[0];
   }
 
 //------------------------------------------------------------------------------
 
   function getNbArticles(int $ref,int $nb): array {
-    #Execution de la requête
+    #Execution de la requête.
     $sqlAnswer = $this->db->query('select * from article where ref>='. $ref . ' limit '. $nb);
 
     # Récupération du résultat sous forme d'un tableau d'Article.
     $res = $sqlAnswer->fetchAll(PDO::FETCH_CLASS,'Article');
-
-    #Contrôle d'erreur
-    if (empty($res)) {
-      echo '/!\ --- Aucune article trouvée';
-    }
     return $res;
   }
 //------------------------------------------------------------------------------
 
+  function getArticlesCat(int $cat): array {
+    // retourne tout les articles de catégorie $cat
+    #Execution de la requête.
+    $sqlAnswer = $this->db->query('select * from article where categorie='. $cat);
+
+    # Récupération du résultat sous forme d'un tableau d'Article.
+    $res = $sqlAnswer->fetchAll(PDO::FETCH_CLASS,'Article');
+    return $res;
+  }
+
+//------------------------------------------------------------------------------
+
   function getAllArticles(): array {
-    #Execution de la requête
+    #Execution de la requête.
     $sqlAnswer = $this->db->query('select * from article');
 
     # Récupération du résultat sous forme d'un tableau d'Article.
@@ -69,7 +68,7 @@ class DAO {
 
     #Contrôle d'erreur
     if (empty($res)) {
-      echo '/!\ --- Aucune article trouvée';
+      echo '/!\ --- Aucune article trouvée//Base de donnés vide';
     }
     return $res;
   }
@@ -77,7 +76,7 @@ class DAO {
 //------------------------------------------------------------------------------
 
   function getFirstNbArticles(int $nb): array {
-    #Execution de la requête
+    #Execution de la requête.
     $sqlAnswer = $this->db->query('select * from article limit '. $nb);
 
     # Récupération du résultat sous forme d'un tableau d'Article.
@@ -85,7 +84,7 @@ class DAO {
 
     #Contrôle d'erreur :
     if (empty($res)) {
-      echo '/!\ --- Aucune article trouvée';
+      echo '/!\ --- Aucune article trouvée//Base de donnés vide';
     }
     return $res;
   }
@@ -93,7 +92,7 @@ class DAO {
 //------------------------------------------------------------------------------
 
   function getNextRef(int $ref): int {
-    #Execution de la requêteProgWeb/lit_project/PHP_Projet/controler/article.ctrl.php?ref=1
+    #Execution de la requête.
     $sqlAnswer = $this->db->query('select * from article where ref>'. $ref .' order by ref limit 1');
 
     # Récupération du résultat sous forme d'un tableau d'Article.
@@ -123,6 +122,18 @@ class DAO {
     }
   }
 }
+
+//------------------------------------------------------------------------------
+
+  function getCategorie(int $id): Categorie {
+    // retourne la catégorie d'id $id
+    # Execution de la requête
+    $sqlAnswer = $this->db->query('select * from categorie where id='. $id);
+
+    # Récupération du résultat sous forme d'un tableau de Categorie.
+    $res = $sqlAnswer->fetchAll(PDO::FETCH_CLASS,'Categorie');
+    return $res[0];
+  }
 
 //------------------------------------------------------------------------------
 ?>

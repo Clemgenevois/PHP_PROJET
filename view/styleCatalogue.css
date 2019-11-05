@@ -19,7 +19,7 @@ article {
 	padding-left: 5px;
 	padding-right: 5px;
 	vertical-align: top;
-  text-align: center;.article
+  text-align: center;
 }
 article h2 {
 	font-size:small;
@@ -33,6 +33,20 @@ article img {
 
 article p {
   color: black;
+}
+
+footer{
+  text-align: right;
+  padding-right: 15px;
+}
+
+.foot {
+	padding: 20px;
+}
+.foot a {
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 /* menuburger  */
@@ -62,7 +76,11 @@ article p {
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
+<<<<<<< HEAD
  background-color: #00FF00;
+=======
+ background-color: #753700;
+>>>>>>> marine
  color: white;
 }
 

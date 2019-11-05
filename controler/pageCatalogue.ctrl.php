@@ -18,6 +18,7 @@ $view = new View();
 // Les articles
 $view->assign('articles',$articles);
 
+// Le chemain vers les images
 $view->assign('images_path',$config['images_path']);
 
 // Charge la vue

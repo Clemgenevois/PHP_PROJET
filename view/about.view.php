@@ -14,6 +14,7 @@
     <div class="topnav" id="myTopnav">
       <a href="../controler/pagePrincipale.ctrl.php">Home</a>
       <a href="../controler/pageCatalogue.ctrl.php" >Voir Tout</a>
+      <a href="../controler/pageCategorie.ctrl.php">Categorie</a>
       <a href="../controler/pageContact.ctrl.php">Contact</a>
       <a href="#about" class="active">About</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -22,5 +23,11 @@
     </div>
   </header>
     <p> a completer </p>
+    <footer>
+      <div class="foot">
+        <a href="https://www.producteurs-savoie-mont-blanc.com/citrouilles-potimarrons.html"> Coopérative de producteurs de citrouilles</a>
+      </p>Site fictif, proposant de merveilleuses citrouilles</p>
+    </div>
+  </footer>
   </body>
 </html>

@@ -60,6 +60,5 @@ if ($prevRef == -1) {
 $view->assign('prevRef',$prevRef);
 */
 // Charge la vue
-
 $view->display("principale.view.php")
 ?>
