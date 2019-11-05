@@ -4,16 +4,16 @@
 <meta charset="UTF-8"/>
 <meta http-equiv="content-type" content="text/html;" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="../view/stylePrincipale.css">
+<link rel="stylesheet" type="text/css" href="../view/design/stylePrincipale.css">
 </head>
 
 <body>
 <header>
-    <h1>Pumpkin cute</h1>
+    <h1>Pumpkin.net</h1>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <div class="topnav" id="myTopnav">
-      <a href="#home" class="active">Home</a>
+      <a href="#home" class="active">Acceuil</a>
       <a href="../controler/pageCatalogue.ctrl.php">Voir Tout</a>
       <a href="../controler/pageContact.ctrl.php">Contact</a>
       <a href="../controler/pageAbout.ctrl.php">About</a>

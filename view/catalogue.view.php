@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html;" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../view/styleCatalogue.css">
+    <link rel="stylesheet" type="text/css" href="../view/design/styleCatalogue.css">
     <title>catalogue</title>
   </head>
   <body>
@@ -12,7 +12,7 @@
       <h1>Pumpkin cute</h1>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <div class="topnav" id="myTopnav">
-        <a href="../controler/pagePrincipale.ctrl.php">Home</a>
+        <a href="../controler/pagePrincipale.ctrl.php">Acceuil</a>
         <a href="#catalogue" class="active">Voir Tout</a>
         <a href="../controler/pageCategorie.ctrl.php">Categorie</a>
         <a href="../controler/pageContact.ctrl.php">Contact</a>
@@ -23,16 +23,30 @@
       </div>
     </header>
     <h2>Catalogue des produits</h2>
+      <form action="../controler/pageCatalogue.ctrl.php" method="get">
+        <fieldset>
+          <legend>Un type de citrouille en particulier ?</legend>
+          <label for="cat">Catégories :</label><br/>
+          <select id="cat" name="citrouille">
+            <option value="1">halloween</option>
+            <option value="2">orange</option>
+            <option value="3">jaune & verte</option>
+            <option value="4">naturelle</option>
+            </optgroup>
+          </select>
+          <input type="submit" value="Rechercher">
+        </fieldset>
+      </form>
     <?php
       foreach($articles as $res){   ?>
         <a href="pageArticle.ctrl.php?ref=<?= $res->getRef()?>">
         <article>
-      <h2> <?php echo $res->getLibelle() ?></h2>
+      <h2> <?=$res->getLibelle()?></h2>
              <img src="<?=$images_path . $res->getImage()?>" alt="citrouille"/>
              <p> <?= $res->getPrix() ?> €</p>
        </article>
        </a>
-      <? } ?>
+     <?php } ?>
       <footer>
         <div class="foot">
           <a href="https://www.producteurs-savoie-mont-blanc.com/citrouilles-potimarrons.html"> Coopérative de producteurs de citrouilles</a>

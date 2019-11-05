@@ -6,7 +6,7 @@ include_once("../framework/view.class.php");
 include_once("../model/DAO.class.php");
 
 // Creation de l'unique objet DAO
-$config = parse_ini_file('../config/config.ini')
+$config = parse_ini_file('../config/config.ini');
 
 $dao = new DAO($config['database_path']);
 
@@ -29,7 +29,7 @@ $view->assign('articles',$articles);
 $view->assign('categorie',$cat);
 
 // Le chemain vers les images
-$view->assign('images_path',config['images_path']);
+$view->assign('images_path',$config['images_path']);
 
 // Charge la vue
 $view->display("categories.view.php")

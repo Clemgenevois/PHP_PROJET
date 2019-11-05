@@ -1,6 +1,7 @@
 <?php
-# Inclusion du fichier contenant la classe Article
-require_once("../model/Article.class.php");
+# Inclusion des fichiers
+require_once('../model/Article.class.php');
+require_once('../model/Categorie.class.php');
 
 # Déclaration d'une constante
 const NO_REF = -1;
@@ -10,7 +11,7 @@ class DAO {
 // Artibut
   private $db;
 
-// Construction
+// Constructeur
   function __construct(string $path) {
     $database = 'sqlite:' . $path . 'citrouille.db';
 
@@ -45,6 +46,7 @@ class DAO {
     $res = $sqlAnswer->fetchAll(PDO::FETCH_CLASS,'Article');
     return $res;
   }
+
 //------------------------------------------------------------------------------
 
   function getArticlesCat(int $cat): array {
@@ -121,7 +123,6 @@ class DAO {
       return $res[$nb-1]->getRef();
     }
   }
-}
 
 //------------------------------------------------------------------------------
 
@@ -136,4 +137,5 @@ class DAO {
   }
 
 //------------------------------------------------------------------------------
+}
 ?>

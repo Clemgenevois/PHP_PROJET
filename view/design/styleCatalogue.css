@@ -76,11 +76,7 @@ footer{
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-<<<<<<< HEAD
- background-color: #00FF00;
-=======
  background-color: #753700;
->>>>>>> marine
  color: white;
 }
 

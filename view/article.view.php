@@ -2,12 +2,19 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="../view/styleArticle.css">
+    <link rel="stylesheet" type="text/css" href="../view/design/styleArticle.css">
     <title>article.php</title>
   </head>
   <body>
     <header>
-
+      <h1>Pumpkin.net</h1>
+      <div class="topnav">
+        <a href="../controler/pagePrincipale.ctrl.php">Acceuil</a>
+        <a href="../controler/pageCatalogue.ctrl.php">Voir Tout</a>
+        <a href="../controler/pageCategorie.ctrl.php">Categories</a>
+        <a href="../controler/pageContact.ctrl.php">Contact</a>
+        <a href="../controler/pageAbout.ctrl.php">About</a>
+      </div>
     </header>
 
     <section>
@@ -24,7 +31,7 @@
             <li>Provenance : <?=$article->getProvenance()?></li>
           </ul>
 
-          <p class="prix"><?=$article->getPrix()?>€/unité</p>
+          <p class="prix"><?=$article->getPrix()?>€</p>
       </article>
 
     </section>

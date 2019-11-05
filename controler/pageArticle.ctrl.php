@@ -7,10 +7,10 @@
   $config = parse_ini_file('../config/config.ini');
 
   // Ouverture de la base de donnée
-  $producteurs = new DAO($config['database_path']);
+  $dao = new DAO($config['database_path']);
 
   // Récupération de l'objet associé à la référence "ref" contenue dans la query string
-  $citrouille = $producteurs->getArticle($_GET['ref']);
+  $citrouille = $dao->getArticle($_GET['ref']);
 
   // Création de la vue
   $vue = new View();

@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html;" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../view/styleContact.css">
+    <link rel="stylesheet" type="text/css" href="../view/design/styleContact.css">
     <title>About</title>
   </head>
   <body>
     <header>
-    <h1>A propos de nous</h1>
+    <h1>Pumpkin.net</h1>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div class="topnav" id="myTopnav">
-      <a href="../controler/pagePrincipale.ctrl.php">Home</a>
+      <a href="../controler/pagePrincipale.ctrl.php">Acceuil</a>
       <a href="../controler/pageCatalogue.ctrl.php" >Voir Tout</a>
       <a href="../controler/pageCategorie.ctrl.php">Categorie</a>
       <a href="../controler/pageContact.ctrl.php">Contact</a>
