@@ -14,9 +14,9 @@
       <div class="topnav" id="myTopnav">
         <a href="../controler/pagePrincipale.ctrl.php">Acceuil</a>
         <a href="../controler/pageCatalogue.ctrl.php" >Voir Tout</a>
-        <a href="../controler/pageCategorie.ctrl.php">Categorie</a>
+        <a href="../controler/pageCategorie.ctrl.php">Categories</a>
         <a href="#contact" class="active">Contact</a>
-        <a href="../controler/pageAbout.ctrl.php">About</a>
+        <a href="../controler/pageAbout.ctrl.php">A propos de nous</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>

@@ -14,7 +14,9 @@ if (isset($_GET['id']) && ( $_GET['id'] <= 4 && $_GET['id'] >= 1)) {
   $categorie = $_GET['id'];
   $articles = $dao->getArticlesCat($categorie);
   $cat = $dao->getCategorie($categorie);
-} else {
+}
+
+else {
   $articles = $dao->getArticlesCat(1);
   $cat = $dao->getCategorie(1);
 }

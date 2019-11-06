@@ -37,29 +37,36 @@ div.topnav a:active {
 section{
   display: inline-flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 section img {
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
   margin: 1em;
 }
 
 article {
   border: 1px solid black;
   padding: 10px;
-  width: 50%;
   height: 50%;
+  margin: 5%;
 }
 
 article figure {
   font-size: 1.5em;
 }
 
+article li {
+  font-size: 1.2em;
+}
+
 p.prix{
   background-color: #FFA500;
   color: white;
-  width: 25%;
+  width: 20%;
   font-size: 1.5em;
   border-radius: 5px;
   text-align: center;

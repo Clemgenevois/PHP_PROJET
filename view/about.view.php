@@ -14,15 +14,17 @@
     <div class="topnav" id="myTopnav">
       <a href="../controler/pagePrincipale.ctrl.php">Acceuil</a>
       <a href="../controler/pageCatalogue.ctrl.php" >Voir Tout</a>
-      <a href="../controler/pageCategorie.ctrl.php">Categorie</a>
+      <a href="../controler/pageCategorie.ctrl.php">Categories</a>
       <a href="../controler/pageContact.ctrl.php">Contact</a>
-      <a href="#about" class="active">About</a>
+      <a href="#about" class="active">A propos de nous</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
   </header>
-    <p> a completer </p>
+    <p>Nous sommes un petit réseau de producteurs de citrouilles et de créateurs proposant leurs produits à travers différents points de vente en France. <br/>
+    Grace aux site web "Pumpkin.net",nous vous proposons les produits que nous vendons dans nos différents points de vente dans la limite des stocks disponibles.</p>
+    <p>images téléchargées depuis : </p>
     <footer>
       <div class="foot">
         <a href="https://www.producteurs-savoie-mont-blanc.com/citrouilles-potimarrons.html"> Coopérative de producteurs de citrouilles</a>

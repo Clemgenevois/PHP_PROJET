@@ -10,6 +10,30 @@ header h1 {
   text-shadow: 2px 2px #000000;
   text-align: center;
 }
+
+form select.listeDeroulante {
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+form input.afficher {
+  background-color: #FFA500;
+  color: white;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: white;
+}
+
+form input.afficher:hover {
+  background-color: black;
+ 	color: white;
+}
+
+form input.afficher:active {
+  background-color: #753700;
+  color: white;
+}
+
 article {
   width: 220px;
   height: 200px;

@@ -13,7 +13,7 @@
         <a href="../controler/pageCatalogue.ctrl.php">Voir Tout</a>
         <a href="../controler/pageCategorie.ctrl.php">Categories</a>
         <a href="../controler/pageContact.ctrl.php">Contact</a>
-        <a href="../controler/pageAbout.ctrl.php">About</a>
+        <a href="../controler/pageAbout.ctrl.php">A propos de nous</a>
       </div>
     </header>
 
@@ -27,7 +27,7 @@
         </figure>
 
           <ul>
-            <li>Catégorie : <?=$article->getCategorie()?></li>
+            <li>Catégorie : <?=$categorie->getNom()?></li>
             <li>Provenance : <?=$article->getProvenance()?></li>
           </ul>
 
@@ -37,7 +37,7 @@
     </section>
 
     <footer>
-      <p>Site fictif, proposant de merveilleuses citrouille.</p>
+      <p>Site fictif, proposant de merveilleuses citrouilles.</p>
     </footer>
 
   </body>

@@ -12,11 +12,16 @@
   // Récupération de l'objet associé à la référence "ref" contenue dans la query string
   $citrouille = $dao->getArticle($_GET['ref']);
 
+  // Récupération de la catégorie de l'article
+  $cat = $dao->getCategorie($citrouille->getCategorie());
+
   // Création de la vue
   $vue = new View();
 
   // Passage d'un unique paramètre (un objet de la classe Article)
   $vue->assign('article',$citrouille);
+
+  $vue->assign('categorie',$cat);
 
   $config = parse_ini_file('../config/config.ini');
 
