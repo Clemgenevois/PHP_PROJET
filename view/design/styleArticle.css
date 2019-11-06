@@ -17,7 +17,7 @@ div.topnav {
 
 div.topnav a {
   float: left;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -25,14 +25,16 @@ div.topnav a {
 }
 
 div.topnav a:hover {
-  background-color: #000000;
-  color: #FFFFFF;
+  background-color: black;
+  color: white;
 }
 
 div.topnav a:active {
   background-color: #753700;
   color: white;
 }
+
+/* Inspiré du style de la barre de navigation présenté à : https://www.w3schools.com/howto/howto_js_topnav.asp */
 
 section{
   display: inline-flex;
@@ -70,6 +72,8 @@ p.prix{
   font-size: 1.5em;
   border-radius: 5px;
   text-align: center;
+  position: relative;
+  left: 70%;
 }
 
 footer {

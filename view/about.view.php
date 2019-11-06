@@ -22,9 +22,12 @@
       </a>
     </div>
   </header>
-    <p>Nous sommes un petit réseau de producteurs de citrouilles et de créateurs proposant leurs produits à travers différents points de vente en France. <br/>
-    Grace aux site web "Pumpkin.net",nous vous proposons les produits que nous vendons dans nos différents points de vente dans la limite des stocks disponibles.</p>
-    <p>images téléchargées depuis : </p>
+    <article class="description">
+      <p>Nous sommes un petit réseau de producteurs de citrouilles et de créateurs proposant leurs produits à travers différents points de vente en France.</p>
+      <p>Avec le site web "Pumpkin.net", nous vous proposons les produits que nous vendons dans nos différents points de vente dans la limite des stocks disponibles.</p>
+      <p>Images issues du web, <br/>
+        téléchargées depuis : </p>
+    </article>
     <footer>
       <div class="foot">
         <a href="https://www.producteurs-savoie-mont-blanc.com/citrouilles-potimarrons.html"> Coopérative de producteurs de citrouilles</a>
