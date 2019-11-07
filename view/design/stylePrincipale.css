@@ -52,6 +52,10 @@ article p {
   color: black;
 }
 
+a {
+	text-decoration: none;
+}
+
 footer{
   text-align: right;
   padding-right: 15px;
@@ -82,7 +86,6 @@ footer{
  color: #f2f2f2;
  text-align: center;
  padding: 14px 16px;
- text-decoration: none;
  font-size: 17px;
 }
 
