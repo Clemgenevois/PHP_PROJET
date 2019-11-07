@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <div class="topnav" id="myTopnav">
-      <a href="#home" class="active">Acceuil</a>
+      <a href="#home" class="active">Accueil</a>
       <a href="../controler/pageCatalogue.ctrl.php">Voir Tout</a>
-      <a href="../controler/pageCategorie.ctrl.php">Categories</a>
+      <a href="../controler/pageCategorie.ctrl.php">Catégories</a>
       <a href="../controler/pageContact.ctrl.php">Contact</a>
-      <a href="../controler/pageAbout.ctrl.php">A propos de nous</a>
+      <a href="../controler/pageAbout.ctrl.php">À propos de nous</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>

@@ -12,11 +12,11 @@
       <h1>Pumpkin.net</h1>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <div class="topnav" id="myTopnav">
-        <a href="../controler/pagePrincipale.ctrl.php">Acceuil</a>
+        <a href="../controler/pagePrincipale.ctrl.php">Accueil</a>
         <a href="../controler/pageCatalogue.ctrl.php" >Voir Tout</a>
-        <a href="../controler/pageCategorie.ctrl.php">Categories</a>
+        <a href="../controler/pageCategorie.ctrl.php">Catégories</a>
         <a href="#contact" class="active">Contact</a>
-        <a href="../controler/pageAbout.ctrl.php">A propos de nous</a>
+        <a href="../controler/pageAbout.ctrl.php">À propos de nous</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
@@ -25,13 +25,14 @@
     <h2>Contact</h2>
     <div class="contenu">
     <div class="infos">
+      <h4>Service consommateur</h4>
       <p class="coordo">
         682 route d'halloween <br>
         36524 Horrorland <br>
         08 00 666 666 <br>
         </p>
         <p class="coordo">
-        Ouvert tous les jours 24h/24
+        Points de ventes ouverts tous les jours 24h/24
         <br> Du 1 Octobre au 1 Novembre
         </p>
     </div>

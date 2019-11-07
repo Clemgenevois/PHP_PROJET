@@ -9,11 +9,11 @@
     <header>
       <h1>Pumpkin.net</h1>
       <div class="topnav">
-        <a href="../controler/pagePrincipale.ctrl.php">Acceuil</a>
+        <a href="../controler/pagePrincipale.ctrl.php">Accueil</a>
         <a href="../controler/pageCatalogue.ctrl.php">Voir Tout</a>
-        <a href="../controler/pageCategorie.ctrl.php">Categories</a>
+        <a href="../controler/pageCategorie.ctrl.php">Catégories</a>
         <a href="../controler/pageContact.ctrl.php">Contact</a>
-        <a href="../controler/pageAbout.ctrl.php">A propos de nous</a>
+        <a href="../controler/pageAbout.ctrl.php">À propos de nous</a>
       </div>
     </header>
 
